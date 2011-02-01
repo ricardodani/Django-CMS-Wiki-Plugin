@@ -1,0 +1,17 @@
+{% load markup %}
+{% load i18n %}
+
+<form action="{% url editPost post.id %}" method="post">
+
+	
+	<div class="fieldbox">
+		<div class="field textarea">
+			{{ form.body }}
+		</div>
+		{% if form.body.help_text %}<div class="help">{{ form.body.help_text }}</div>{% endif %}
+		{% if form.body.errors %}<div class="erro">{{ form.body.errors }}</div>{% endif %}
+	</div>
+
+
+	<input type="submit" />
+</form>

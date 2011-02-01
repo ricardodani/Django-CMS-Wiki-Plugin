@@ -1,0 +1,20 @@
+Wiki-Plugin for Django-cms
+
+Author: Ricardo Lapa Dani
+ricardodani@gmail.com
+Belo Horizonte - Brazil
+
+-------------
+Instructions
+
+1) In your settings.py add:
+
+INSTALLED_APPS = (
+    # django.admin & cms here
+    ...
+    
+    'django.contrib.markup',
+    'wiki',
+)
+
+2) Enjoy!
